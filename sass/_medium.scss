@@ -1,0 +1,61 @@
+
+
+
+
+
+/* ------------- HEADER ------------- */
+header {
+	height: 130px; 
+	h1{padding-top: 50px;} //end h1
+}
+
+nav {
+
+	#primaryNav {
+		display: inline-block;
+		margin: 0px;
+	}
+
+	.container {
+		padding: 0px 16px;
+	}
+	
+	display: block;
+	position: relative;
+
+	ul li {
+		width: auto;
+	}
+
+	ul li a {
+		padding: .5rem 1rem;
+	}
+
+	button {
+		display: none;
+	}
+
+	ul.closed {
+		display: block;
+	}
+
+	ul li:hover ul { /* this displays the menus as drop downs  */
+		left: auto;
+		margin-left: 0;
+	}
+}
+
+/* ------------- MAIN ------------- */
+
+main {
+	.card {		
+		width: 33%;
+	}
+
+	.container {
+		padding: 0px 16px;
+	}
+}
+
+
+/*  ------------- Lazy Load Gallery -------------  */

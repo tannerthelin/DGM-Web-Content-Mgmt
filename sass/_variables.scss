@@ -1,0 +1,31 @@
+@font-face {
+    font-family: "Circular";
+    src: url("../fonts/circular-book.woff") format("woff");
+    font-weight: 300;
+  }
+
+@font-face {
+    font-family: "Circular";
+    src: url("../fonts/circular-medium.woff") format("woff");
+    font-weight: 500;
+}
+
+body {
+    font-family: 'Circular', sans-serif;
+    font-weight: 300;
+}
+
+$primaryColor: #224458;
+$secondaryColor:#F46650;
+$lightText: #8E9FA9;
+$menuColor: #FCFBFC;
+$menuTextColor: #224458;
+$fontColor: #dce2eb;
+
+$defaultFont: 'Circular', sans-serif;;
+$normalWeight: 300;
+$boldWeight: 500;
+
+$gutter: 2%;
+$gutterdbl: (2 * $gutter);
+

@@ -1,0 +1,299 @@
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+
+/*  apply a natural box layout model to all elements  */
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+/* ------------- BODY ------------- */
+body {
+	font-family: $defaultFont;
+	font-size: 16px;
+	font-weight: $normalWeight;
+}
+
+
+/* ------------- HEADER ------------- */
+
+.logo {
+    cursor: pointer;
+}
+
+.logo img {
+	height: 55px;
+	padding-top: 10px;
+	padding-left: 5px;
+  }
+
+.phone-container {
+    height: 100% !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;  
+}
+
+.container {
+	max-width: 1200px;
+	padding: 0px 16px;
+    margin: auto;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 10px;
+    height: 92px;
+}
+
+.header-container {
+    border-bottom: 1px solid #DBDDE0;
+}
+
+.button {
+    border: 1px solid #ECEDEE;
+    border-radius: 100px;
+    padding: 15px 20px;
+    cursor: pointer;
+    max-height: 49px;
+}
+
+.button:hover {
+    background-color: #FCFBFC;
+}
+
+.button-text {
+    color: #F46650;
+    font-weight: 500;
+	letter-spacing: 1.5px;
+	text-decoration: none;
+}
+
+
+
+/*  ------------- NAV -------------  */
+nav {
+	border-bottom: 1px solid #DBDDE0;
+	display: relative;
+
+	.search-form {
+				display: flex;
+				justify-content: flex-end;
+				float: right;
+				width: 150px;
+				padding-top: 4px;
+				display: absolute;
+				top: 0px;
+		
+			}
+		
+			.search-input {
+				border-radius: 100px 0px 0px 100px;
+				flex-grow: 1;
+				height: 30px;
+				border: 1px solid #DBDDE0;
+				padding: 0px 12px;
+				font-size: 15px;
+				font-weight: $boldWeight;
+			}
+		
+			.search-button {
+				border-radius: 0px 100px 100px 0px;
+				border: none;
+				height: 30px;
+				background-color: #F46650;
+				color: white;
+				font-weight: $boldWeight;
+				text-transform: uppercase;
+				cursor: pointer;
+				letter-spacing: 1px;
+			}
+		
+			.search-input:focus {
+				outline: none;
+			}
+		
+			.search-input::placeholder {
+				color: #8E9FA9;
+			}
+		
+			.search-button:focus {
+				outline: none;
+			}
+		
+			.search-button:hover {
+				background-color: #FD7762;
+			}
+}
+
+
+
+/*  ------------- MAIN -------------  */
+
+main {
+	h1 {
+		font-size: 2rem;
+		font-weight: $normalWeight;
+		margin: 0 0 0 10px;
+		color: $primaryColor;
+	} // end h1
+	
+	
+	p {
+		line-height: 130%;
+		margin: .25rem $gutter 0 $gutter;
+	} // end p
+
+	.card {		
+		width: 50%;
+		padding: 10px;
+		margin-top: 14px;	
+		float: left;	
+	}
+
+	.card-container {
+		border: 1px solid #DBDDE0;
+		height: 280px;		
+		background-size: cover;
+		background-repeat: no-repeat;
+		border-radius: 10px;
+		color: white;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		text-align: center;
+		overflow: hidden;
+		margin-bottom: 50px;
+		cursor: pointer;
+		
+	}
+
+	.card-container:hover .text-overlay {
+		background-color: rgba($color: #000000, $alpha: 0.8);
+	}
+
+	.card-1 {
+		background-image: url('../images/card-bg-1.png');
+	}
+
+	.card-2 {
+		background-image: url('../images/card-bg-2.png');
+	}
+
+	.card-3 {
+		background-image: url('../images/card-bg-3.png');
+	}
+
+	.card-4 {
+		background-image: url('../images/card-bg-4.png');
+	}
+
+	h2 {
+		font-size: 20px;
+		font-weight: $normalWeight;
+	}
+
+	h3 {
+		font-size: 13px;
+		text-transform: uppercase;
+		font-weight: $normalWeight;
+		letter-spacing: 1px;
+	}
+
+	.text-overlay {
+		width: 100%;
+		background-color: rgba($color: #000000, $alpha: 0.4);
+		padding: 10px 0px;
+		transition: .2s ease;
+	}
+} // end main
+
+
+
+/*  ------------- SLICK SLIDER -------------  */
+div.myslider div {width: 100%; margin-top: 10px; z-index: 2;}
+div.myslider img {width: 100%; border-radius: 10px;}
+
+
+/*  ------------- FOOTER -------------  */
+footer {
+	clear: both;
+	width: 100%;
+	background-color: #F6F3F6;
+	border-top: 1px solid #DBDDE0;
+	color: #224458;
+
+	h2 {
+		font-size: 20px;
+		font-weight: $normalWeight;
+		padding-bottom: 8px;
+	}
+
+	p {
+		text-align: left;
+		color: $primaryColor;
+		line-height: 18px;
+	} // end p
+	a {
+		color: $primaryColor;
+		line-height: 18px;
+	}
+
+	a:hover {
+		color: #487996;
+	}
+
+	.main-footer {
+		display: flex;
+		padding: 30px 16px;
+		justify-content: space-between;
+	}
+
+	.footer-column {
+		width: 28%;
+	}
+
+	input {
+		width: 100%;
+		margin: 10px 0;
+		border-radius: 5px;
+		border:none;
+		height: 25px;
+		border: 1px solid #DBDDE0;
+		padding: 18px 6px;
+		font-size: 15px;
+	}
+
+	input:focus {
+		outline: none;
+	}
+
+	.button {
+		background-color: #EBE8EB;
+		border: 1px solid #DBDDE0;
+		text-transform: uppercase;
+		letter-spacing: 1px;
+	}
+
+	.footer-bottom {
+		background-color: #D6D2D6;
+		text-align: center;
+		padding: 20px;
+
+		.copyright {
+			text-align: center;
+			margin: 15px 0px 0px 0px;
+		}
+
+		.social-icon {
+			margin: 12px;
+		}
+	}
+} // end footer
+
+
+
+/*----- Clearfix: Force an Element not to collapse -----*/
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
