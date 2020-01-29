@@ -73,6 +73,7 @@ body {
 nav {
 	border-bottom: 1px solid #DBDDE0;
 	display: relative;
+	z-index: 999;
 
 	.search-form {
 				display: flex;
@@ -230,7 +231,8 @@ footer {
 	p {
 		text-align: left;
 		color: $primaryColor;
-		line-height: 18px;
+		line-height: 16px;
+		font-size: 14px;
 	} // end p
 	a {
 		color: $primaryColor;

@@ -89,7 +89,7 @@ $menuTextColor: #224458;
 	}
 
 // Toggle the navigation bar to expand down when the javascript assigns the "open" class
-	#primaryNav.open {height: auto;}
+	#primaryNav.open {height: auto; width: 100%;}
 
 // .parent class indicates dropdown by adding a down arrow to the parent list item 
 	#primaryNav li.parent > a::after {
@@ -97,6 +97,13 @@ $menuTextColor: #224458;
 		content: "\25BC";
 		color: rgba(255,255,255,.5);
 		float: right;
+	}
+
+	#primaryNav.open form {
+		margin: auto;
+		width: 100%;
+		padding: 0px 16px;
+		margin: 20px 0px;
 	}
 
 //hide the sub menu unordered list by default

@@ -163,7 +163,8 @@ body {
 /*  ------------- NAV -------------  */
 nav {
   border-bottom: 1px solid #DBDDE0;
-  display: relative; }
+  display: relative;
+  z-index: 999; }
   nav .search-form {
     display: flex;
     justify-content: flex-end;
@@ -275,7 +276,8 @@ footer {
   footer p {
     text-align: left;
     color: #224458;
-    line-height: 18px; }
+    line-height: 16px;
+    font-size: 14px; }
   footer a {
     color: #224458;
     line-height: 18px; }
@@ -325,6 +327,11 @@ footer {
     height: 130px; }
     header h1 {
       padding-top: 50px; }
+
+  .nav-container {
+    max-width: 1200px;
+    padding: 0px 16px;
+    margin: auto; }
 
   nav {
     display: block;
@@ -489,13 +496,20 @@ footer {
     background-color: rgba(0, 0, 0, 0.5); }
 
   #primaryNav.open {
-    height: auto; }
+    height: auto;
+    width: 100%; }
 
   #primaryNav li.parent > a::after {
     font-size: .75rem;
     content: "\25BC";
     color: rgba(255, 255, 255, 0.5);
     float: right; }
+
+  #primaryNav.open form {
+    margin: auto;
+    width: 100%;
+    padding: 0px 16px;
+    margin: 20px 0px; }
 
   #primaryNav li ul {
     display: none;
