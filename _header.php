@@ -61,15 +61,15 @@
 	<div class="nav-container">
 		<button id="hamburgerBtn"><span><i>&equiv;</i>OPEN</span> <span><i>&otimes;</i>CLOSE</span></button>
 		<ul id="primaryNav">
-			<li class="current-menu-item"><a href="#">Home</a></li>
-			<li><a href="#">Cruises</a></li>
+			<li class="current-menu-item"><a href="index.php">Home</a></li>
+			<li><a href="cruises.php">Cruises</a></li>
 			<li class="parent"><a href="#">Agents</a>
 				<ul>
-					<li><a href="#">Jim Halpert</a></li>
-					<li><a href="#">Dwight Schrute</a></li>
+					<li><a href="agent1.php">Jim Halpert</a></li>
+					<li><a href="agent2.php">Dwight Schrute</a></li>
 				</ul>
 			</li>
-			<li><a href="#">Book</a></li> 
+			<li><a href="bookCruise.php">Book</a></li> 
 			<form class="search-form">
 					<input class="search-input" type="search" placeholder="Search...">
 					<input class="search-button" type="submit" value="Search">
