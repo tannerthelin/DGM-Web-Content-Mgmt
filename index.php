@@ -1,4 +1,4 @@
-<?php include '_header.php'; ?>
+<?php $ptitle='Cabot Cruises'; include '_header.php'; ?>
 
 		<div class="myslider container">
 			<picture>

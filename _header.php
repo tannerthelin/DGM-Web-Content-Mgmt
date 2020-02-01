@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 
-<title>Cabot Cruises</title>
+<title><?php echo($ptitle); ?></title>
 
 
 <!-- TELLS PHONES NOT TO LIE ABOUT THEIR WIDTH & stops the font from enlarging when a phone is turned sideways-->
