@@ -61,6 +61,15 @@ main {
 	.container {
 		padding: 0px 16px;
 	}
+
+	.cruise {
+		flex-direction: row; 
+		justify-content: center;
+	}
+
+	.agent-image {
+		float: right;
+	}
 }
 
 

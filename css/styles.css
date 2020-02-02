@@ -204,8 +204,35 @@ nav {
 main h1 {
   font-size: 2rem;
   font-weight: 300;
-  margin: 0 0 0 10px;
+  margin: 0 0 0 0px;
   color: #224458; }
+main .book-form {
+  display: flex;
+  flex-direction: column; }
+main .book-form input {
+  border-radius: 100px;
+  height: 30px;
+  border: 1px solid #DBDDE0;
+  padding: 0px 12px;
+  font-size: 15px;
+  font-weight: 500;
+  max-width: 500px;
+  margin-bottom: 20px; }
+main .book-form label {
+  font-size: 13px;
+  text-transform: uppercase;
+  font-weight: 300;
+  letter-spacing: 1px;
+  margin-bottom: 5px; }
+main .book-form select {
+  border-radius: 100px;
+  height: 30px;
+  border: 1px solid #DBDDE0;
+  padding: 0px 12px;
+  font-size: 15px;
+  font-weight: 500;
+  max-width: 500px;
+  margin-bottom: 20px; }
 main p {
   line-height: 130%;
   margin: 0.25rem 2% 0 2%; }
@@ -251,6 +278,23 @@ main .text-overlay {
   background-color: rgba(0, 0, 0, 0.4);
   padding: 10px 0px;
   transition: .2s ease; }
+main .cruise {
+  display: flex;
+  align-content: center;
+  margin-bottom: 40px;
+  flex-direction: column;
+  justify-content: center; }
+main .agent-image {
+  margin-bottom: 20px;
+  border-radius: 10px; }
+main p {
+  padding: 0px;
+  margin: 0px;
+  margin-top: 10px; }
+main .cruise img {
+  border-radius: 10px;
+  margin-right: 20px;
+  margin-bottom: 10px; }
 
 /*  ------------- SLICK SLIDER -------------  */
 div.myslider div {
@@ -359,6 +403,11 @@ footer {
     width: 33%; }
   main .container {
     padding: 0px 16px; }
+  main .cruise {
+    flex-direction: row;
+    justify-content: center; }
+  main .agent-image {
+    float: right; }
 
   /*  ------------- Lazy Load Gallery -------------  */ }
 @media only screen and (min-width: 64em) {
@@ -408,6 +457,8 @@ footer {
       left: auto;
       margin-left: 0; }
     nav li.current-menu-item a {
+      background-color: rgba(0, 0, 0, 0.25); }
+    nav li.parent {
       background-color: rgba(0, 0, 0, 0.25); }
 
   /* ------------- MAIN ------------- */
