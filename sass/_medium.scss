@@ -72,5 +72,15 @@ main {
 	}
 }
 
+footer {
+	.main-footer {
+		flex-direction: row;
+	}
+
+	.footer-column {
+		max-width: 28%;
+	}
+}
+
 
 /*  ------------- Lazy Load Gallery -------------  */

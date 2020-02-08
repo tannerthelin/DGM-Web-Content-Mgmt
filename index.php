@@ -3,22 +3,22 @@
 		<div class="myslider container">
 			<picture>
 				<source srcset="sliders/slider01h.jpg" media="(min-width: 680px)">
-				<img srcset="sliders/slider01s.jpg">
+				<img srcset="sliders/slider01s.jpg" alt="A cruise ship">
 			</picture>
 
 			<picture>
 				<source srcset="sliders/slider02h.jpg" media="(min-width: 680px)">
-				<img srcset="sliders/slider02s.jpg">
+				<img srcset="sliders/slider02s.jpg" alt="A cruise ship in front of a city">
 			</picture>
 
 			<picture>
 				<source srcset="sliders/slider03h.jpg" media="(min-width: 680px)">
-				<img srcset="sliders/slider03s.jpg">
+				<img srcset="sliders/slider03s.jpg" alt="A cruise ship at night">
 			</picture>
 
 			<picture>
 				<source srcset="sliders/slider04h.jpg" media="(min-width: 680px)">
-				<img srcset="sliders/slider04s.jpg">
+				<img srcset="sliders/slider04s.jpg" alt="People at the beach">
 			</picture>
 
 		</div>

@@ -63,7 +63,7 @@
 		<ul id="primaryNav">
 			<li><a href="index.php">Home</a></li>
 			<li><a href="cruises.php">Cruises</a></li>
-			<li class="parent"><a href="#">Agents</a>
+			<li class="parent"><a id="parentItem" href="#">Agents</a>
 				<ul>
 					<li><a href="agent1.php">James Halpert</a></li>
 					<li><a href="agent2.php">Dwight Schrute</a></li>

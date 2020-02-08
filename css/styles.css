@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* 
 html5doctor.com Reset Stylesheet
 v1.6.1
@@ -191,6 +192,9 @@ nav {
     text-transform: uppercase;
     cursor: pointer;
     letter-spacing: 1px; }
+  nav #parentItem:after {
+    color: #224458;
+    content: ' ▾'; }
   nav .search-input:focus {
     outline: none; }
   nav .search-input::placeholder {
@@ -329,10 +333,11 @@ footer {
     color: #487996; }
   footer .main-footer {
     display: flex;
+    flex-direction: column;
     padding: 30px 16px;
     justify-content: space-between; }
   footer .footer-column {
-    width: 28%; }
+    margin-bottom: 50px; }
   footer input {
     width: 100%;
     margin: 10px 0;
@@ -408,6 +413,11 @@ footer {
     justify-content: center; }
   main .agent-image {
     float: right; }
+
+  footer .main-footer {
+    flex-direction: row; }
+  footer .footer-column {
+    max-width: 28%; }
 
   /*  ------------- Lazy Load Gallery -------------  */ }
 @media only screen and (min-width: 64em) {

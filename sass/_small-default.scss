@@ -107,6 +107,11 @@ nav {
 				cursor: pointer;
 				letter-spacing: 1px;
 			}
+
+			#parentItem:after {
+				color: $primaryColor;
+				content: ' ▾';
+			 }
 		
 			.search-input:focus {
 				outline: none;
@@ -280,7 +285,7 @@ footer {
 	background-color: #F6F3F6;
 	border-top: 1px solid #DBDDE0;
 	color: #224458;
-
+	
 	h2 {
 		font-size: 20px;
 		font-weight: $normalWeight;
@@ -304,12 +309,14 @@ footer {
 
 	.main-footer {
 		display: flex;
+		flex-direction: column;
 		padding: 30px 16px;
 		justify-content: space-between;
 	}
 
 	.footer-column {
-		width: 28%;
+		
+		margin-bottom: 50px;
 	}
 
 	input {
